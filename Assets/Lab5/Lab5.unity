@@ -339,6 +339,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   theTarget: {fileID: 912628396}
+  faceThis: {fileID: 616854013}
+  speedDivider: 11.95
 --- !u!54 &80290961
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3963,6 +3965,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   theTarget: {fileID: 1548749872}
+  faceThis: {fileID: 616854013}
+  speedDivider: 11.95
 --- !u!54 &1608328906
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4634,6 +4638,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   theTarget: {fileID: 1181535626}
+  faceThis: {fileID: 616854013}
+  speedDivider: 11.95
 --- !u!195 &1857724543
 NavMeshAgent:
   m_ObjectHideFlags: 0

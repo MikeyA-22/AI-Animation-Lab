@@ -11,7 +11,8 @@ public class navscript : MonoBehaviour
     private static readonly int Walking = Animator.StringToHash("walking");
     public GameObject theTarget;
     private NavMeshAgent agent;
-    
+    public GameObject faceThis;
+    public float speedDivider = 4;
     
     bool isWalking = true;
     private Animator animator;
@@ -20,12 +21,14 @@ public class navscript : MonoBehaviour
     {
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
-        animator.speed = agent.speed/4;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+        animator.speed = agent.speed/speedDivider;
+        transform.LookAt(faceThis.transform);
         if (isWalking)
         {
             agent.destination = theTarget.transform.position;    
